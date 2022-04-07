@@ -1,12 +1,14 @@
-#include <studio.h>
+#include <stdio.h>
 
 /**
- * main - entry point
+ * main - Prints "Programming is like building a multilingual
+ *                puzzle, followed by a new line.
  *
- * Return: Always 0 (Success)
+ * Return: Always 0.
  */
 int main(void)
 {
-pits("\"Programming is like building a multilingual puzzle");
-return (0);
-i}
+        puts("\"Programming is like building a multilingual puzzle");
+
+        return (0);
+}
