@@ -7,7 +7,7 @@
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
- int main(void)
+ void print_number(int n);
 {
     int a;
     int b;
