@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 /**
  * print_number - prints an integer
@@ -7,39 +6,39 @@
  */
 void print_number(int n)
 {
-	int power, neg, hold;
+	int x, y, z;
 
-	neg = 0;
-	power = 1;
-	hold = n;
+	x = 0;
+	y = 1;
+	z = n;
 	if (n < 0)
 	{
 		_putchar('-');
-		neg = 1;
+		x = 1;
 	}
-	while (hold > 9 || hold < -9)
+	while (z > 9 || z < -9)
 	{
-		power *= 10;
-		hold /= 10;
+		y *= 10;
+		z /= 10;
 	}
-	while (power > 0)
+	while (y > 0)
 	{
-		if (power > 9)
+		if (y > 9)
 		{
-			if (!neg)
-				_putchar((n / power % 10) + '0');
+			if (!x)
+				_putchar((n / y % 10) + '0');
 			else
-				_putchar((n / power % 10) * -1 + '0');
+				_putchar((n / y % 10) * -1 + '0');
 
-			power /= 10;
+			y /= 10;
 		}
-		if (power == 1)
+		if (y == 1)
 		{
-			if (neg)
+			if (x)
 				_putchar((n % 10) * -1 + '0');
 			else
 				_putchar(n % 10 + '0');
-			power = 0;
+			y = 0;
 		}
 	}
 }
