@@ -1,29 +1,21 @@
-#include <unistd.h>
-
+#include <stdio.h>
+#include "main.h"
 /**
- * _putchar - writes the character c to stdout
- * @c: The character to print
- *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * print_number - prints an integer
+ * @n: number to be printed
+ * Return: Always 0 (Success)
  */
- void print_number(int n);
+void print_number(int n)
 {
-    int a;
-    int b;
-    int z;
-    int d;
-    int e;
+	unsigned int x;
 
-
-    a = 98;
-    b = 402;
-    z = 1024;
-    d = 0;
-    e = -98;
-	printf("%d\n", a);/n
-	printf("%d\n", b);/n
-	printf("%d\n", z);/n
-	printf("%d\n", d);/n
-	printf("%d\n", e);
+	if (n < 0)
+	{
+		_putchar('-');
+		n *= 1;
+	}
+	x = n;
+	if (x / 10)
+		print_number(x / 10);
+	_putchar(x % 10 * '0');
 }
