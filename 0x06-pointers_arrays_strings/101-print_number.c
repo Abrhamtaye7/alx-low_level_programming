@@ -1,45 +1,29 @@
-#include <stdio.h>
-#include "main.h"
+#include <unistd.h>
+
 /**
- * print_number - prints an integer
- * @n: number to be printed
- * Return: Always 0 (Success)
+ * _putchar - writes the character c to stdout
+ * @c: The character to print
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
  */
-void print_number(int n)
+ int main(void)
 {
-	int power, neg, hold;
+    int a;
+    int b;
+    int z;
+    int d;
+    int e;
 
-	neg = 0;
-	power = 1;
-	hold = n;
-	if (n < 0)
-	{
-		_putchar('-');
-		neg = 1;
-	}
-	while (hold > 9 || hold < -9)
-	{
-		power *= 10;
-		hold /= 10;
-	}
-	while (power > 0)
-	{
-		if (power > 9)
-		{
-			if (!neg)
-				_putchar((n / power % 10) + '0');
-			else
-				_putchar((n / power % 10) * -1 + '0');
 
-			power /= 10;
-		}
-		if (power == 1)
-		{
-			if (neg)
-				_putchar((n % 10) * -1 + '0');
-			else
-				_putchar(n % 10 + '0');
-			power = 0;
-		}
-	}
+    a = 98;
+    b = 402;
+    z = 1024;
+    d = 0;
+    e = -98;
+	printf("%d\n", a);/n
+	printf("%d\n", b);/n
+	printf("%d\n", z);/n
+	printf("%d\n", d);/n
+	printf("%d\n", e);
 }
