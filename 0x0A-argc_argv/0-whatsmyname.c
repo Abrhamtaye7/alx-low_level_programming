@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 /**
  * main - Entry ppoint
  * @argc: size of argv array
@@ -7,6 +8,7 @@
  */
 int main(int argc, char *argv[])
 {
+	(void) argc;
 	int x;
 
 	for (x = 0; x < argc; x++)
