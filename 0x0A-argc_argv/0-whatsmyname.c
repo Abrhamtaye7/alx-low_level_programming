@@ -6,14 +6,9 @@
  * @argv: array of size argc
  * Return: Always 0 Sucess
  */
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
-	(void) argc;
-	int x;
-
-	for (x = 0; x < argc; x++)
-	{
+	if (argc > 0)
 		printf("%s\n", argv[0]);
-	}
 	return (0);
 } 
