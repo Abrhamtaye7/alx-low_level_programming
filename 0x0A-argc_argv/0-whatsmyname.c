@@ -1,17 +1,15 @@
 #include <stdio.h>
 /**
- * main - Entry ppoint
- * @argc: size of argv array
- * @argv: array of size argc
- * Return: Always 0 Sucess
+ * main - prints the program's name, followed by a new line
+ * @argc: arg count
+ * @argv: args passed as an array of strs
+ * Return: 0;
  */
 int main(int argc, char *argv[])
 {
-	int x;
+	(void) argc;
 
-	for (x = 0; x < argc; x++)
-	{
-		printf("%s\n", argv[x]);
-	}
+	printf("%s\n", argv[0]);
+
 	return (0);
-} 
+}
