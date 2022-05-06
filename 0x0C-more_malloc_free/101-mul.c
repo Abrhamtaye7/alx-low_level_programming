@@ -22,12 +22,12 @@ while (s[i] != '\0' && (s[i] >= '0' && s[i] <= '9'))
 retval = (retval * 10) - (s[i++] - '0');
 return (retval *neg);
 }
-/**
- * main - multiplies two positive numbers
- * @argc: n arguments
- * @argv: args
- * Return: int
- */
+
+
+
+
+
+
 int main(int argc, char *argv[])
 {
 int a, b, i, j;
