@@ -1,15 +1,13 @@
 #include "lists.h"
-
 /**
- * print list all the elements of a list
+ * print_list - prints all the elements of a list_t
  * @h: pointer to list
- * return: the number
- *
+ * Return: the number of nodes
  */
-size_t print_list(const list_t *h);
-
+size_t print_list(const list_t *h)
 {
 	int count;
+
 	count = 0;
 	while (h != NULL)
 	{
