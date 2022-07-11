@@ -1,3 +1,3 @@
 #!/bin/bash
-wget -P .. /tmp/ https://raw.githubusercontent.com/eleccrazy/alx-low_level_programming/master/0x18-dynamic_libraries/libeleccrazy.so
+wget -P .. /tmp/ https://raw.githubusercontent.com/Abrhamtaye7/alx-low_level_programming/master/0x18-dynamic_libraries/libdynamic.so
 export LD_PRELOAD="/tmp/../libdynamic.so"
