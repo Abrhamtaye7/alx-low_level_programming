@@ -1,2 +1,1 @@
-# Makefiles
-Foundations - Low-level programming & Algorithm ― Hatching out
+0x1C-makefiles
